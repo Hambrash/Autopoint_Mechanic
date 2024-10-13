@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background styles */
+.background {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../assets/backgroundimage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Overlay */
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Content */
+.content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Service Heading */
+.service-h2 span {
+    color: #FFD700;
+}
+
+/* Ensure images are responsive */
+.service-img1 {
+    width: 100%;
+    height: auto;
+}
+
+/* Center the cards */
+.service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Add space between cards on mobile */
+@media (max-width: 768px) {
+    .service-cards .card {
+        margin-bottom: 20px;
+        width: 90%; /* Cards take up more width on small screens */
+        max-width: 300px;
+    }
+}
+
+/* Keep cards in a row on tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .service-cards .card {
+        margin-bottom: 20px;
+        width: 18rem;
+    }
+}
+
+/* Larger screens */
+@media (min-width: 1024px) {
+    .service-cards .card {
+        width: 18rem;
+    }
+}
+
+
+
+
+
+.home-h1{
+    color: #FFD700;
+}
+.home-p{
+    color: #FFD700;
+    margin-top: 10px;
+}
+.home-content{
+    background-color: rgba(0, 0, 0, 0.438);
+    border-radius: 20px;
+    padding: 20px;
+}
+.nav{
+    color: rgba(0, 0, 0, 0.473);
+    margin-right: 5px;
+}
+.nav:hover{
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.service-h2 span{
+    color: #FFD700;
+
+}
+
+.service-p{
+    color: #FFD700;
+}
+
+
+.service-img1{
+    height: 120px;
+    width: 200px;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+.service-card{
+    background-color: rgba(0, 0, 0, 0.438);
+    border: 1px solid white;
+    color: #FFD700;
+}
+
+
+.thank-img{
+    height: 300px;
+    width: 500px;
+}
+
+.thank-bg{
+    background-color: lightsteelblue;
+  
+}
+  
